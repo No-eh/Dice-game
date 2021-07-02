@@ -1,7 +1,15 @@
 import java.util.Random;
+import java.util.Scanner;
+
 class Dice{
     public static void main(String[] args){
 	Random r=new Random();
+	Scanner s=new Scanner(System.in);
+
+	System.out.println("What is your name?");
+	String name=s.next();
+	s.close();
+	System.out.println("Hello,"+name+"!");
 	
 	int die1=r.nextInt(6)+1;
 	int die2=r.nextInt(6)+1;
